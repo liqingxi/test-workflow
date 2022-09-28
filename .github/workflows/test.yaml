@@ -9,3 +9,4 @@ jobs:
     - shell: bash
       run: |
         system_profiler SPSoftwareDataType SPHardwareDataType
+        sysctl -a
