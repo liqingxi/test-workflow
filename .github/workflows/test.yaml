@@ -5,7 +5,7 @@ jobs:
   test:
     name: test on macos
     runs-on: macos-latest
-
+    steps:
     - shell: bash
       run: |
         system_profiler SPSoftwareDataType SPHardwareDataType
