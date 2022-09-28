@@ -1,0 +1,11 @@
+name: MacOS Workflow
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: test on macos
+    runs-on: macos-latest
+
+    - shell: bash
+      run: |
+        system_profiler SPSoftwareDataType SPHardwareDataType
